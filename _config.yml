@@ -1,0 +1,27 @@
+# 사이트 기본 설정 (이 파일을 수정하면 사이트 전체에 반영됩니다)
+title: 홍길동
+description: 연구와 공부 기록
+lang: ko
+timezone: Asia/Seoul
+
+# 저장소 이름이 "아이디.github.io" 이면 비워 두세요.
+baseurl: ""
+# url: "https://아이디.github.io"
+
+permalink: /blog/:year/:month/:day/:title/
+markdown: kramdown
+highlighter: rouge
+
+# 모든 글에 post 레이아웃을 자동 적용
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+# 배포에 필요 없는 파일
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
